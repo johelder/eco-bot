@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: eco-bot
+    build: .
+    restart: always
+    ports:
+      - 3333:3333
+    env_file:
+      - ./.env
