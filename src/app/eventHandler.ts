@@ -13,7 +13,10 @@ async function successfullyConnect() {
 }
 
 async function messageReceived(message: Message) {
-  if (message.hasMedia && message.type === 'audio') {
+  const isAudioMessage =
+    message.type === 'ptt' || (message.hasMedia && message.type === 'audio');
+
+  if (isAudioMessage) {
     const audio = await message.downloadMedia();
 
     const binaryData = Buffer.from(audio.data, 'base64');
