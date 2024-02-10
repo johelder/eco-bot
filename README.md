@@ -65,4 +65,4 @@ Se deseja contribuir diretamente com código, siga estes passos:
 
 ---
 
-<p align="center">Com 🧡 por <a href="https://www.linkedin.com/in/johelder/">Johelder</a></p>
+<p align="center">Com 💚 por <a href="https://www.linkedin.com/in/johelder/">Johelder</a></p>
