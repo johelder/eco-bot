@@ -1,0 +1,27 @@
+{
+  "name": "eco-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "node --import tsx --env-file .env src/app/server.ts",
+    "lint": "eslint"
+  },
+  "keywords": [],
+  "author": "https://github.com/johelder",
+  "license": "ISC",
+  "dependencies": {
+    "@huggingface/inference": "^2.6.4",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.23.0"
+  },
+  "devDependencies": {
+    "@types/qrcode-terminal": "^0.12.2",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "prettier": "3.2.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
