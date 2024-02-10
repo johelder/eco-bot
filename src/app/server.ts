@@ -8,6 +8,10 @@ const localAuth = new LocalAuth();
 
 export const client = new Client({
   authStrategy: localAuth,
+  puppeteer: {
+    headless: true,
+    args: ['--no-sandbox'],
+  },
 });
 
 client.on('qr', eventHandler.generateQRcode);
