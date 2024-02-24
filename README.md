@@ -6,7 +6,7 @@
 
 O eco-bot é um assistente virtual para WhatsApp projetado para otimizar o seu tempo diário, oferecendo a funcionalidade de transcrição de áudios para texto. 
 
-![](./.github/doggo-presentation.png)
+![](./.github/eco-bot.gif)
 
 ## Pré-Requisitos | ⚙️
 
@@ -65,4 +65,4 @@ Se deseja contribuir diretamente com código, siga estes passos:
 
 ---
 
-<p align="center">Com 🧡 por <a href="https://www.linkedin.com/in/johelder/">Johelder</a></p>
+<p align="center">Com 💚 por <a href="https://www.linkedin.com/in/johelder/">Johelder</a></p>
