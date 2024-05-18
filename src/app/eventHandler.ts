@@ -3,6 +3,7 @@ import { Message } from 'whatsapp-web.js';
 
 import { dispatchMessage } from './utils/dispatchMessage';
 import { speechToText } from './services/speechToText';
+import { generateContent } from './services/generativeIA';
 
 function generateQRcode(qr: string) {
   return qrcode.generate(qr, { small: true });
@@ -24,6 +25,16 @@ async function messageReceived(message: Message) {
     const text = await speechToText(binaryData);
 
     await dispatchMessage(message, `Mensagem transcrita: ${text}`);
+
+    return;
+  }
+
+  if (message.body.startsWith('!')) {
+    const text = await generateContent(message.body.replace('!', ''));
+
+    await dispatchMessage(message, `Resposta: ${text}`);
+
+    return;
   }
 }
 
